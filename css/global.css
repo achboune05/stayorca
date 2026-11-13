@@ -1,0 +1,279 @@
+
+
+:root {
+    
+    --color-noche: #05203C; /* Header, footer, fondo oscuro */
+    --color-azul: #0062E3; /* Botones (CTA), enlaces, iconos */
+    --color-arena: #E8D5B0; /* Detalles, etiquetas, destacados */
+    --color-fondo: #F5F7FA; /* Fondo de la web */
+    --color-texto: #161616; /* Texto principal */
+
+    --color-azul-hover: #024DAF; /* Botón en hover */
+    --color-gris: #626971; /* Texto secundario */
+    --color-borde: #C1C7CF; /* Bordes e inputs */
+    --color-exito: #0C838A; /* Mensajes de éxito */
+    --color-error: #E70866; /* Mensajes de error */
+    --color-blanco: #FFFFFF;
+    --color-estrella: #F5A623; /* Estrellas de valoración */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input,
+select,
+button {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.boton {
+    height: 48px;
+    padding: 0 24px;
+    border: 2px solid var(--color-azul);
+    border-radius: 8px;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: var(--color-azul-hover);
+    border-color: var(--color-azul-hover);
+}
+
+.boton:active {
+    background-color: var(--color-noche);
+    border-color: var(--color-noche);
+}
+
+.lucide {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 16px;
+    background-color: var(--color-noche);
+}
+
+header .logo img {
+    height: 32px;
+}
+
+.hamburguesa {
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.abierto {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-noche);
+}
+
+.menu a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary .lucide {
+}
+
+details[open] summary .lucide {
+    transform: rotate(180deg);
+}
+
+.respuesta {
+    padding-top: 16px;
+}
+
+footer {
+    padding: 48px 16px 32px;
+    background-color: var(--color-noche);
+    color: var(--color-blanco);
+}
+
+.footer_marca {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer_marca img {
+    height: 48px;
+    margin: 0 auto 8px;
+}
+
+.footer_enlaces details {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-gris);
+}
+
+.footer_enlaces li {
+    margin-bottom: 8px;
+}
+
+.footer_enlaces a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.footer_enlaces a:hover {
+    text-decoration: underline;
+}
+
+.footer_copy {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-borde);
+}
+
+.footer_copy p {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header {
+        height: 80px;
+        padding: 0 32px;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 32px;
+        padding: 64px 32px 32px;
+    }
+
+    .footer_marca {
+        text-align: left;
+    }
+
+    .footer_marca img {
+        margin: 0 0 8px;
+    }
+
+    .footer_enlaces {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .footer_enlaces details {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .footer_enlaces summary .lucide {
+        display: none;
+    }
+
+    .footer_copy {
+        grid-column: 1 / -1;
+        padding-top: 32px;
+        border-top: 1px solid var(--color-gris);
+    }
+}

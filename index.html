@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stayorca | Alquiler de casas en Menorca</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo/logo.png" alt="Stayorca">
+        </a>
+
+        <button class="hamburguesa" aria-label="Abrir menú">☰</button>
+
+        <nav class="menu">
+            <a href="#">Zonas</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+            <button class="boton">Iniciar sesión</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="cover">
+            <h1>Encuentra el alojamiento perfecto</h1>
+
+            <div class="formulario">
+                <form action="">
+                    <input class="input_destino" type="text" placeholder="Nombre del alojamiento"
+                        aria-label="Destino">
+
+                    <div class="b_fechas">
+                        <input type="date" aria-label="Fecha de entrada">
+                        <input type="date" aria-label="Fecha de salida">
+                    </div>
+
+                    <select class="input_personas" aria-label="Huéspedes">
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 o más personas</option>
+                    </select>
+
+                    <button class="boton">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefit">
+                <i data-lucide="house"></i>
+                <p>Casas propias revisadas</p>
+            </div>
+            <div class="benefit">
+                <i data-lucide="badge-percent"></i>
+                <p>Sin comisiones</p>
+            </div>
+            <div class="benefit">
+                <i data-lucide="calendar-check"></i>
+                <p>Cancelación flexible</p>
+            </div>
+            <div class="benefit">
+                <i data-lucide="headphones"></i>
+                <p>Atención 24 horas</p>
+            </div>
+        </section>
+
+        <section class="cover2">
+            <div class="cover2_texto">
+                <h2>Ahorra en tu próxima reserva de alojamiento</h2>
+                <p>Hemos recopilado las mejores ofertas para que encuentres una casa increíble en Menorca a un precio
+                    imbatible.</p>
+            </div>
+            <div class="mensaje">
+                <i data-lucide="bed-double"></i>
+                <p>Hasta un <span class="descuento">30%</span> menos</p>
+            </div>
+        </section>
+
+        <section class="marcas">
+            <h2>Marcas que trabajan con nosotros</h2>
+            <div class="lista_marcas">
+                <div class="marca">
+                    <img src="img/marcas/trivago.png" alt="Trivago">
+                </div>
+                <div class="marca">
+                    <img src="img/marcas/trivago.png" alt="Trivago">
+                </div>
+                <div class="marca">
+                    <img src="img/marcas/trivago.png" alt="Trivago">
+                </div>
+                <div class="marca">
+                    <img src="img/marcas/trivago.png" alt="Trivago">
+                </div>
+            </div>
+        </section>
+
+        <section class="alojamientos">
+            <h2>Alojamientos por toda la isla</h2>
+            <p>Puede que tu aventura esté más cerca de lo que crees. Descubre casas en cada rincón de Menorca, desde
+                Ciutadella hasta Maó.</p>
+
+            <div class="localidades">
+                <button class="boton">Ciutadella</button>
+                <button class="boton">Maó</button>
+                <button class="boton">Alaior</button>
+                <button class="boton">Fornells</button>
+            </div>
+
+            <div class="lista_alojamientos">
+
+                <article class="alojamiento">
+                    <img src="img/alojamientos/hotel_2.jpg" alt="Casa junto al lago de Cala'n Bosch">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Casa Lago Cala'n Bosch</h3>
+                            <p>Ciutadella · a 5 min de la playa</p>
+                            <p><span>4.5</span>/5 <span>Notable</span> 320 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star" class="vacia"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>79.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alojamiento">
+                    <img src="img/alojamientos/hotel_3.jpg" alt="Villa con vistas al puerto de Maó">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Villa Mirador del Port</h3>
+                            <p>Maó · vistas al puerto</p>
+                            <p><span>4.6</span>/5 <span>Notable</span> 210 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star" class="vacia"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>60.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alojamiento">
+                    <img src="img/alojamientos/hotel_1.jpg" alt="Casa con piscina en Cala Galdana">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Casa Blanca Cala Galdana</h3>
+                            <p>Ferreries · piscina privada</p>
+                            <p><span>5.0</span>/5 <span>Excelente</span> 145 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>121.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alojamiento">
+                    <img src="img/alojamientos/room.jpg" alt="Habitación de una casa en Alaior">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Casa Rural Son Bou</h3>
+                            <p>Alaior · a 10 min de Son Bou</p>
+                            <p><span>4.3</span>/5 <span>Muy bien</span> 98 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star" class="vacia"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>54.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alojamiento">
+                    <img src="img/logo/fondo.webp" alt="Casa con piscina en Fornells">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Villa Badia de Fornells</h3>
+                            <p>Fornells · junto a la bahía</p>
+                            <p><span>4.8</span>/5 <span>Excelente</span> 176 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>98.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alojamiento">
+                    <img src="img/cover/cover_2home.webp" alt="Apartamento frente al mar en Cala en Porter">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <h3>Apartamento Cala en Porter</h3>
+                            <p>Alaior · frente al mar</p>
+                            <p><span>4.4</span>/5 <span>Notable</span> 260 opiniones</p>
+                        </div>
+                        <div class="precio">
+                            <div class="estrella">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star" class="vacia"></i>
+                            </div>
+                            <p>Desde</p>
+                            <span>69.99€</span>
+                            <p>por noche</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="interes">
+            <h2>Datos de interés</h2>
+            <p>Descubre todo lo que necesitas y olvida las preocupaciones</p>
+            <div class="benefits">
+                <div class="benefit">
+                    <i data-lucide="waves"></i>
+                    <p>Playas a menos de 15 min</p>
+                </div>
+                <div class="benefit">
+                    <i data-lucide="car"></i>
+                    <p>Aparcamiento gratuito</p>
+                </div>
+                <div class="benefit">
+                    <i data-lucide="wifi"></i>
+                    <p>Wifi en todas las casas</p>
+                </div>
+                <div class="benefit">
+                    <i data-lucide="paw-print"></i>
+                    <p>Casas que admiten mascotas</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <article class="conte">
+                <img src="img/iconos/icono.webp" alt="">
+                <h3>Tu próxima estancia, más barata</h3>
+                <p>Grandes ofertas, descuentos y chollos en estancias únicas</p>
+            </article>
+
+            <article class="conte">
+                <img src="img/iconos/icono.webp" alt="">
+                <h3>Precios actualizados</h3>
+                <p>Siempre te mostramos los precios más recientes para que sepas exactamente qué esperar</p>
+            </article>
+
+            <article class="conte">
+                <img src="img/iconos/icono.webp" alt="">
+                <h3>Búsqueda precisa</h3>
+                <p>Filtra por piscina, cancelación gratuita, reserva flexible y esos pequeños detalles que hacen una
+                    experiencia única</p>
+            </article>
+        </section>
+
+        <section class="questions">
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Cómo puedo realizar una reserva?<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <p>Selecciona la casa, elige las fechas y el número de huéspedes y completa tu reserva.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿Puedo cancelar mi reserva?<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <p>Sí, depende de las condiciones de cancelación de cada alojamiento.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿El alojamiento incluye desayuno?<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <p>Depende del alojamiento seleccionado. Consulta sus servicios.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿Hay wifi?<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <p>Todas nuestras casas ofrecen wifi gratuito.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿A qué hora puedo entrar y salir?<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <p>Los horarios de check-in y check-out dependen de cada alojamiento.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="opciones">
+            <h2>Más opciones de viaje</h2>
+            <div class="opcion">
+                <button class="boton">Casas con piscina</button>
+                <button class="boton">Cerca de la playa</button>
+                <button class="boton">Escapadas en familia</button>
+                <button class="boton">Admiten mascotas</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_marca">
+            <img src="img/logo/logo.png" alt="Stayorca">
+            <p>Alaior, Menorca</p>
+        </div>
+
+        <section class="footer_enlaces">
+            <details>
+                <summary>Ayuda<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Hoja de reclamación</a></li>
+                            <li><a href="#">Cómo reservar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </details>
+
+            <details>
+                <summary>Descubre<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Zonas de Menorca</a></li>
+                            <li><a href="#">Mejores playas</a></li>
+                            <li><a href="#">Casas con piscina</a></li>
+                            <li><a href="#">Escapadas en familia</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </details>
+
+            <details>
+                <summary>Términos y configuración<i data-lucide="chevron-down"></i></summary>
+                <div class="respuesta">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Aviso legal</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Política de cookies</a></li>
+                            <li><a href="#">Términos y condiciones de uso</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </details>
+        </section>
+
+        <div class="footer_copy">
+            <p>Compra y reserva alojamientos baratos con Stayorca</p>
+            <p>© 2026 Stayorca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

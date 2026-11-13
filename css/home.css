@@ -1,0 +1,407 @@
+
+
+.benefits,
+.marcas,
+.alojamientos,
+.interes,
+.questions,
+.opciones {
+    padding: 48px 16px 0;
+}
+
+.opciones {
+    padding-bottom: 48px;
+}
+
+.alojamientos > p,
+.interes > p {
+    margin-top: 8px;
+    color: var(--color-gris);
+}
+
+.cover {
+    min-height: 400px;
+    padding: 48px 16px;
+    background-image: linear-gradient(#00000066, #00000066), url(../img/logo/fondo.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.cover h1 {
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    height: 48px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid var(--color-borde);
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+}
+
+.input_destino {
+    border-radius: 8px 8px 0 0;
+}
+
+.formulario .input_personas {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.b_fechas {
+    display: flex;
+}
+
+.b_fechas input {
+    flex: 1;
+    min-width: 0;
+}
+
+.b_fechas input:first-of-type {
+    border-right: 1px solid var(--color-borde);
+}
+
+.formulario .boton {
+    margin-top: 16px;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.benefit .lucide {
+    width: 32px;
+    height: 32px;
+    color: var(--color-azul);
+}
+
+.cover2 {
+    margin: 48px 16px 0;
+    padding: 24px 16px;
+    border-radius: 12px;
+    background-image: linear-gradient(#00000066, #00000066), url(../img/cover/cover_2home.webp);
+    background-size: cover;
+    background-position: center;
+    color: var(--color-blanco);
+}
+
+.cover2_texto p {
+    margin-top: 8px;
+}
+
+.mensaje {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 24px 0 0 auto;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+}
+
+.mensaje .lucide {
+    width: 32px;
+    height: 32px;
+    color: var(--color-azul);
+}
+
+.mensaje p {
+    width: 80px;
+    color: var(--color-azul);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.descuento {
+    font-size: 32px;
+}
+
+.lista_marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.marca {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--color-blanco);
+}
+
+.marca img {
+    height: 48px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.localidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0;
+}
+
+.lista_alojamientos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.alojamiento {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--color-blanco);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.alojamiento:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+.alojamiento img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 16px;
+}
+
+.informacion h3 {
+    margin-bottom: 8px;
+}
+
+.informacion p,
+.precio p {
+    font-size: 14px;
+    color: var(--color-gris);
+}
+
+.informacion span {
+    font-weight: 700;
+    color: var(--color-texto);
+}
+
+.precio {
+    text-align: right;
+}
+
+.precio span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.estrella {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.estrella .lucide {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-estrella);
+    stroke: var(--color-estrella);
+}
+
+.estrella .vacia {
+    fill: none;
+}
+
+.interes .benefits {
+    padding: 32px 0 0;
+}
+
+.contenedor {
+    display: grid;
+    gap: 32px;
+    margin: 48px 16px 0;
+    padding: 32px 16px;
+    border-radius: 12px;
+    background-color: var(--color-noche);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.conte img {
+    height: 160px;
+    width: auto;
+    margin: 0 auto 16px;
+}
+
+.conte h3 {
+    margin-bottom: 8px;
+}
+
+.conte p {
+    color: var(--color-borde);
+}
+
+.questions h2 {
+    margin-bottom: 24px;
+}
+
+.questions details {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.questions .respuesta p {
+    color: var(--color-gris);
+}
+
+.opcion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+
+    .benefits,
+    .marcas,
+    .alojamientos,
+    .interes,
+    .questions,
+    .opciones {
+        padding: 64px 32px 0;
+    }
+
+    .opciones {
+        padding-bottom: 64px;
+    }
+
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 560px;
+        padding: 64px 32px;
+    }
+
+    .cover h1 {
+        text-align: left;
+    }
+
+    .formulario form {
+        max-width: 600px;
+        margin-top: 32px;
+    }
+
+    .benefit {
+        width: 25%;
+    }
+
+    .cover2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        max-width: 1200px;
+        width: 90%;
+        margin: 64px auto 0;
+        padding: 48px;
+    }
+
+    .cover2_texto {
+        max-width: 600px;
+    }
+
+    .mensaje {
+        margin: 0;
+    }
+
+    .lista_marcas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lista_alojamientos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interes .benefits {
+        padding: 32px 0 0;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        width: 90%;
+        margin: 64px auto 0;
+        padding: 64px 32px;
+    }
+
+    .questions details {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .formulario form {
+        max-width: none;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .formulario input,
+    .formulario select {
+        border-bottom: none;
+        border-right: 1px solid var(--color-borde);
+    }
+
+    .input_destino {
+        flex: 2;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .b_fechas {
+        flex: 2;
+    }
+
+    .formulario .input_personas {
+        flex: 1;
+        border-right: none;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .formulario .boton {
+        margin: 0 0 0 16px;
+    }
+
+    .lista_alojamientos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
